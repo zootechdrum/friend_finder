@@ -1,9 +1,9 @@
 $(document).ready(function(){
-    $("input[type='button']").click(function(){
-        var radioValue = $("input[name='money']:checked").val();
-        if(radioValue){
-            alert("Your are a - " + radioValue);
-        }
+    $(".form-button").click(function(){
+        var radioValue = $("input:checked").each(function() {
+            console.log(this.value)
+        });
+
     });
 
     var name = {bam: "cc"} 
