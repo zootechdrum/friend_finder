@@ -5,4 +5,13 @@ $(document).ready(function(){
             alert("Your are a - " + radioValue);
         }
     });
+
+    var name = {bam: "cc"} 
+    $.post("api/friends",name ,function(data) {
+            console.log(data)
+        }
+    )
 });
+
+
+

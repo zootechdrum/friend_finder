@@ -4,6 +4,10 @@ var express = require("express");
 var app = express()
 var PORT = 3000;
 
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+//Loads up our static files 
 app.use('/', express.static(path.join(__dirname, 'public')))
 
 require("./routing/apiRoutes")(app);
