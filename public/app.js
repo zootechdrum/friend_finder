@@ -1,19 +1,36 @@
-var data = {};
+
 
 $(document).ready(function(){
-    $(".form-button").click(function(){
-        var radioValue = $("input:checked").each(function() {
-            console.log(this.value)
+
+    var data = {
+        name :'',
+        image : '',
+        answer: []
+    }
+
+
+    $(".form-button").click(function(e){
+        e.preventDefault()
+        $("form :input[type=radio]:checked").each(function() {
+            var value = $(this).val();
+            data.answer.push(this.value)
         });
+        if(data.answer.length < 2){
+            console.log("not all boxes have been checked")
+        }else if( $("#fName").val() === ''){
+            console.log("First name is wrong")
+        }else if($("#imageUrl").val() === ''){
+            console.log("Missing iamge url")
+        }
+        
+        })
 
-    });
-
-    var name = {bam: "cc"} 
     $.post("api/friends",name ,function(data) {
             console.log(data)
         }
     )
 });
+
 
 
 
