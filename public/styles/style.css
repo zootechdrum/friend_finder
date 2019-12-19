@@ -1,14 +1,29 @@
+body{
+    font-size: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 h1 {
     color:red;
 }
 
+h3{
+    font-size: 1.2em !important;
+    padding:10px;
+}
+
 .form{
-    background-color: #e1e5ea;
+    padding-left:10px;
+    font-size: 1.4em;
+    background-color:#e8eeef;
     margin: 0 auto;
     border-radius: 3px;
     width:70%;
 }
 
+.form-check{
+    margin-bottom: 5px;
+}
 .form-button > button{
     background-color:#16a085;
     border-radius: 5px;
