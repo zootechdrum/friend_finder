@@ -1,3 +1,5 @@
+var data = {};
+
 $(document).ready(function(){
     $(".form-button").click(function(){
         var radioValue = $("input:checked").each(function() {
