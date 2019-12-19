@@ -2,6 +2,8 @@
 
 $(document).ready(function () {
 
+    var formQuestions = 10;
+
     var data = {
         name: '',
         image: '',
@@ -18,7 +20,7 @@ $(document).ready(function () {
 
         $("#alert").empty();
 
-        if (data.answer.length < 2) {
+        if (data.answer.length < formQuestions) {
             $("#alert").append("<p class='alert alert-danger'>Please answer every question</p>")
         } else if ($("#fName").val() === '') {
             $("#alert").append("<p class='alert alert-danger'>Please Enter your name</p>")
