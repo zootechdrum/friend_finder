@@ -14,19 +14,25 @@ module.exports = function(app) {
 
     var friend = req.body;
 
+    var compatabilityScore;
+
     var bestFriend = {};
 
     var diffArray = [];
 
     for( var i = 0; i < friends.length; i++){
-       console.log(friends)
-      //  if (friends[i].answer[k] >= friend.answer[k]) {
-      //      (diffArray.push(friends[i].answer[k] - friend.answer[k]))
-      //  }else {
-      //   diffArray.push(friend.answer[k] - parseInt(friends[k].answer))
-      //  }
-     }
+       for(var j = 0; j < friend.answer.length; j++){
 
+        if (friends[i].answer[j] >= friend.answer[j]){
+            diffArray.push(friends[i].answer[j] - friend.answer[j]) 
+        }else {
+          diffArray.push(friend.answer[j] - parseInt(friends[i].answer[j]))
+        }
+       }
+       compatabilityScore = diffArray.reduce((a, b) => a + b, 0)
+       console.log(compatabilityScore)
+       diffArray = []
+     }
   });
 
 }

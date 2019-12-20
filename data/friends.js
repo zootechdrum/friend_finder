@@ -2,7 +2,7 @@ var friends = [
   {
     name: "Ahmed",
     imageUrl: "ahmed@example.com",
-    answer: [3,3,3,3,3,3,3,3,3]
+    answer: [1,1,1,1,1,1,1,1,1]
   },
   {
     name: "Cesar",
