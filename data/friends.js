@@ -1,9 +1,8 @@
 var friends = [
   {
-    customerName: "Ahmed",
-    customerEmail: "ahmed@example.com",
-    customerID: "afhaque89",
-    phoneNumber: "000-000-0000"
+    name: "Ahmed",
+    imageUrl: "ahmed@example.com",
+    answer: [1,2,3,2,1,1,2,2,3,3]
   }
 ];
 
