@@ -1,12 +1,12 @@
 var friends = [
   {
     name: "Ahmed",
-    imageUrl: "ahmed@example.com",
+    imageUrl: "https://source.unsplash.com/u3WmDyKGsrY",
     answer: [1,1,1,1,1,1,1,1,1]
   },
   {
     name: "Cesar",
-    imageUrl: "ahmed@example.com",
+    imageUrl: "https://source.unsplash.com/ff5K3-kYPHA",
     answer: [3,3,3,3,3,3,3,3,3]
   },
 ];

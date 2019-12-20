@@ -48,6 +48,7 @@ $(document).ready(function () {
 
     function toggle(info) {
         $("#friendName").append(info.name);
+        $("#friendImg").attr('src', info.image);
         $('#myModal').modal('toggle');
     }
 
