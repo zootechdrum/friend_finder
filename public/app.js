@@ -15,7 +15,7 @@ $(document).ready(function () {
         }
         $("form :input[type=radio]:checked").each(function () {
             var value = $(this).val();
-            data.answer.push((this.value))
+            data.answer.push(parseInt(this.value))
         });
         //Removes any child elements
         $("#alert").empty();

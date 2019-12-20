@@ -12,14 +12,21 @@ module.exports = function(app) {
 
   app.post("/api/friends", function(req, res) {
 
-    var friend = req.body
+    var friend = req.body;
 
-    friends.push(friend)
+    var bestFriend = {};
+
+    var diffArray = [];
+
     for( var i = 0; i < friends.length; i++){
-      console.log(friends[i])
-    }
+       console.log(friends)
+      //  if (friends[i].answer[k] >= friend.answer[k]) {
+      //      (diffArray.push(friends[i].answer[k] - friend.answer[k]))
+      //  }else {
+      //   diffArray.push(friend.answer[k] - parseInt(friends[k].answer))
+      //  }
+     }
 
- 
   });
 
 }
