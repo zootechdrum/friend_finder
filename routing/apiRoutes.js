@@ -29,10 +29,19 @@ module.exports = function(app) {
           diffArray.push(friend.answer[j] - parseInt(friends[i].answer[j]))
         }
        }
+       //adds up all numbers in diff array
        compatabilityScore = diffArray.reduce((a, b) => a + b, 0)
        console.log(compatabilityScore)
+       //revertsback diffarray to empty after each person
        diffArray = []
+
+       if(bestFriend === {} || bestFriend.score > compatabilityScore) {
+         bestFriend.name = friends[i].name
+         bestFriend.score = compatabilityScore
+       }
+
      }
+     console.log(bestFriend)
   });
 
 }
