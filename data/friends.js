@@ -6,8 +6,23 @@ var friends = [
   },
   {
     name: "Cesar",
-    imageUrl: "https://source.unsplash.com/ff5K3-kYPHA",
+    imageUrl: "https://source.unsplash.com/tAvpDE7fXgY",
     answer: [3,3,3,3,3,3,3,3,3]
+  },
+  {
+    name: "Luz",
+    imageUrl: "https://source.unsplash.com/sibVwORYqs0",
+    answer: [2,3,1,2,1,1,3,2,3]
+  },
+  {
+    name: "Stan",
+    imageUrl: "https://source.unsplash.com/das6NrjLoM0",
+    answer: [1,1,1,2,1,1,1,2,3]
+  },
+  {
+    name: "Catalina",
+    imageUrl: "https://source.unsplash.com/7DD6tfTKqS4",
+    answer: [2,1,1,2,2,2,2,2,2]
   },
 ];
 
