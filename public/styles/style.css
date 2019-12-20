@@ -3,6 +3,12 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.jumbotron {
+    color:red;
+    background-image: url("../images/friendBanner.jpg");
+    background-size: cover;
+  }
+
 h1 {
     color:red;
 }

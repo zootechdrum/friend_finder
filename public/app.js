@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
 
-    var formQuestions = 10;
+    var formQuestions = 9;
 
     var data = {
         name: '',
@@ -17,7 +17,7 @@ $(document).ready(function () {
             var value = $(this).val();
             data.answer.push(parseInt(this.value))
         });
-
+        //Removes any child elements
         $("#alert").empty();
 
         if (data.answer.length < formQuestions) {
@@ -29,9 +29,11 @@ $(document).ready(function () {
         } else {
             data.name = $("#fName").val()
             data.image = $("#imageUrl").val()
-            $.post("api/friends", data, function (data) {
-                console.log(data)
-            })
+            console.log(data)
+            // $.post("api/friends", data, function (data) {
+            //     console.log(data)
+            // })
+            
         }
 
     })
