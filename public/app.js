@@ -32,6 +32,7 @@ $(document).ready(function () {
 
             $.post( "/api/friends", data , function( resFromEnd ) {
                 console.log(resFromEnd)
+                toggle(resFromEnd)
               });
               //resets the data object.
               data = {
@@ -44,6 +45,11 @@ $(document).ready(function () {
 
         }
     })
+
+    function toggle(info) {
+        $("#friendName").append(info.name);
+        $('#myModal').modal('toggle');
+    }
 
     function restart() {
         $("#fName").val('');
