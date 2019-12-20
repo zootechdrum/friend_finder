@@ -30,20 +30,22 @@ $(document).ready(function () {
             data.name = $("#fName").val()
             data.image = $("#imageUrl").val();
 
-            $.post( "/api/friends",data, function( resFromEnd ) {
+            $.post( "/api/friends", data , function( resFromEnd ) {
+                console.log(resFromEnd)
               });
+              //resets the data object.
               data = {
                 name: '',
                 image: '',
                 answer: []           
             }
+            //Clears all inputs after submission
             restart()
 
         }
     })
 
     function restart() {
-
         $("#fName").val('');
         $("#imageUrl").val('');
         $(".form-check-input").prop('checked', false);

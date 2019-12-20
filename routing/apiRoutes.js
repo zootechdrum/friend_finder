@@ -42,10 +42,11 @@ module.exports = function (app) {
       }
       //resets the score back to zero
       compatabilityScore = 0;
+      //resets diffArray
       diffArray = [];
     }
-
-    console.log(bestFriend)
+//Sends json information to the frontend
+    res.json(bestFriend)
   });
 
 }
