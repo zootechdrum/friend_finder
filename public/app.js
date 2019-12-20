@@ -3,7 +3,7 @@
 $(document).ready(function () {
 
     var formQuestions = 9;
-
+//data to be send to api end point
     var data = {
         name: '',
         image: '',
@@ -33,12 +33,8 @@ $(document).ready(function () {
             // $.post("api/friends", data, function (data) {
             //     console.log(data)
             // })
-            
         }
-
     })
-
-
 });
 
 
