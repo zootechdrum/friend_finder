@@ -57,3 +57,12 @@ of each user to the compatability score of the current user.
 
 ### Home screenshot
 ![Home Pic](/public/images/home-screen.png)
+
+### Survey screenshot
+![Survey Pic](/public/images/survey-screen.png)
+
+### Error screenshot
+![Survey Pic](/public/images/error-message.png)
+
+### Best Friend recommendation
+![Survey Pic](/public/images/error-message.png)
