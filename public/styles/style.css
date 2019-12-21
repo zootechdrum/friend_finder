@@ -22,9 +22,12 @@ body{
     display:block;
 }
 
+home-btn{
+    float:right;
+}
 
 h1 {
-    color:red;
+    color:#16a085;
 }
 
 h3{

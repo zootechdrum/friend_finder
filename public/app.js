@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
 
-    var formQuestions = 9;
+    var formQuestions = $(".formQ").length;
 //data to be send to api end point
 
 
@@ -31,7 +31,6 @@ $(document).ready(function () {
             data.image = $("#imageUrl").val();
 
             $.post( "/api/friends", data , function( resFromEnd ) {
-                console.log(resFromEnd)
                 toggle(resFromEnd)
               });
               //resets the data object.
