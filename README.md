@@ -13,7 +13,7 @@ In this activity, I built a compatibility-based "FriendFinder" application. This
 
 ### Code Snippet
 
-The below code returns a funtcion which then gets called which then gets called and passes the app 
+The below code returns a function which then gets called which then gets called and passes the app 
 argument into the function. This makes those specific routes that are available in that folder to users
 who make both "POST" and "GET" requests. 
 
