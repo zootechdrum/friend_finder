@@ -54,3 +54,6 @@ of each user to the compatability score of the current user.
     friends.push(friend);
   });
 ```
+
+### Home screenshot
+![Home Pic](/public/images/home-screen.png)
