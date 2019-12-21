@@ -3,7 +3,7 @@
 $(document).ready(function () {
 
     var formQuestions = $(".formQ").length;
-//data to be send to api end point
+    //data to be send to api end point
 
 
     $(".form-button").click(function (e) {
@@ -30,14 +30,14 @@ $(document).ready(function () {
             data.name = $("#fName").val()
             data.image = $("#imageUrl").val();
 
-            $.post( "/api/friends", data , function( resFromEnd ) {
+            $.post("/api/friends", data, function (resFromEnd) {
                 toggle(resFromEnd)
-              });
-              //resets the data object.
-              data = {
+            });
+            //resets the data object.
+            data = {
                 name: '',
                 image: '',
-                answer: []           
+                answer: []
             }
             //Clears all inputs after submission
             restart()
@@ -46,17 +46,25 @@ $(document).ready(function () {
     })
 
     function toggle(info) {
-        $("#friendName").append(info.name);
-        $("#friendImg").attr('src', info.image);
-        $('#myModal').modal('toggle');
+        
+        if (typeof info === 'object') {
+            $("#friendName").append(info.name);
+            $("#friendImg").attr('src', info.image);
+            
+        } else {
+            $("#friendName").append(info);
+            $("#friendName").append("<p>Your information has been saved</p>");
+            $('#myModal').modal('toggle');
+
+        }
     }
 
-    function restart() {
-        $("#fName").val('');
-        $("#imageUrl").val('');
-        $(".form-check-input").prop('checked', false);
-    }
-});
+        function restart() {
+            $("#fName").val('');
+            $("#imageUrl").val('');
+            $(".form-check-input").prop('checked', false);
+        }
+    });
 
 
 

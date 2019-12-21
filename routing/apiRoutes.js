@@ -20,6 +20,13 @@ module.exports = function (app) {
     var bestFriend = {};
     //array to keep track of the difference
     var diffArray = [];
+
+
+    if (friends.length === 0) {
+      res.json("Nobody has signed up yet!")
+      friends.push(friend);
+      return
+    }
     //loops through friends data and has a nested loop to loops through our current friend 
     for (var i = 0; i < friends.length; i++) {
       for (var j = 0; j < friend.answer.length; j++) {
@@ -32,7 +39,6 @@ module.exports = function (app) {
       }
       //adds up all numbers in diff array]
       compatabilityScore = diffArray.reduce((a, b) => a + b, 0);
-      console.log(compatabilityScore)
       //revertsback diffarray to empty after each person
       //If best does not have property of name or bestFriend score is greater then current score
       if (!bestFriend.name || bestFriend.score > compatabilityScore) {
