@@ -22,7 +22,7 @@ require("./routing/htmlRoutes")(app);
 ```
 
 The below code is the small algorithm challenge which compares the compatability score 
-of each user. 
+of each user to the compatability score of the current user. 
 
 ```javascript
  //loops through friends data and has a nested loop to loops through our current friend 
