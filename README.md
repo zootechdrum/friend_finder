@@ -68,4 +68,4 @@ of each user to the compatability score of the current user.
 ![sucess Pic](/public/images/sucess.png)
 
 ### Giphy of working app
-![site giphy](/public/images/friends-giphy.gif)
+![site giphy](/public/images/friend-giphy.gif)
