@@ -22,8 +22,8 @@ module.exports = function (app) {
     var diffArray = [];
 
 
-    if (friends.length === 0) {
-      res.json("Nobody has signed up yet!")
+    if (friends.length <= 2) {
+      res.json("Not enough people have been signed up yet!")
       friends.push(friend);
       return
     }

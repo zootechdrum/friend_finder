@@ -46,10 +46,11 @@ $(document).ready(function () {
     })
 
     function toggle(info) {
-        
+        $("#friendName").val('');
         if (typeof info === 'object') {
             $("#friendName").append(info.name);
             $("#friendImg").attr('src', info.image);
+            $('#myModal').modal('toggle');
             
         } else {
             $("#friendName").append(info);
