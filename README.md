@@ -62,10 +62,10 @@ of each user to the compatability score of the current user.
 ![Survey Pic](/public/images/survey-screen.png)
 
 ### Error screenshot
-![Survey Pic](/public/images/error-message.png)
+![error Pic](/public/images/error-message.png)
 
 ### Best Friend recommendation
-![Survey Pic](/public/images/error-message.png)
+![sucess Pic](/public/images/sucess.png)
 
 ### Giphy of working app
 ![site giphy](/public/images/friends-giphy.gif)
