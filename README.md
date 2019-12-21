@@ -66,3 +66,6 @@ of each user to the compatability score of the current user.
 
 ### Best Friend recommendation
 ![Survey Pic](/public/images/error-message.png)
+
+### Giphy of working app
+![site giphy](/public/images/friends-giphy.gif)
