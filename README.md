@@ -9,6 +9,7 @@ In this activity, I built a compatibility-based "FriendFinder" application. This
 3. JavaScript
 4. CSS3
 5. HTML5
+6. Flexbox
 
 ### Code Snippet
 
@@ -35,7 +36,7 @@ of each user to the compatability score of the current user.
           diffArray.push(friend.answer[j] - parseInt(friends[i].answer[j]))
         }
       }
-      //adds up all numbers in diff array]
+      //adds up all numbers in diff array.
       compatabilityScore = diffArray.reduce((a, b) => a + b, 0);
       //revertsback diffarray to empty after each person
       //If best does not have property of name or bestFriend score is greater then current score
