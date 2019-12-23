@@ -53,7 +53,7 @@ module.exports = function (app) {
     }
 //Sends json information to the frontend
     res.json(bestFriend)
-    friends.push(friend);
+    friends.unshift(friend);
   });
 
 }

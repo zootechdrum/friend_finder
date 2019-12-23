@@ -46,7 +46,6 @@ $(document).ready(function () {
     })
 
     function toggle(info) {
-        $("#friendName").val('');
         if (typeof info === 'object') {
             $("#friendName").append(info.name);
             $("#friendImg").attr('src', info.image);
@@ -61,8 +60,9 @@ $(document).ready(function () {
     }
 
         function restart() {
+            $("#friendName").empty();
             $("#fName").val('');
-            $("#imageUrl").val('');
+            $("#imageUrl").attr('src' ,'');
             $(".form-check-input").prop('checked', false);
         }
     });

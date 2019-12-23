@@ -10,7 +10,7 @@ var friends = [
     answer: [3,3,3,3,3,3,3,3,3]
   },
   {
-    name: "Ca",
+    name: "Dexter",
     imageUrl: "https://source.unsplash.com/sibVwORYqs0",
     answer: [2,3,1,2,1,1,3,2,3]
   },
