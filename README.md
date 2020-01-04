@@ -70,3 +70,5 @@ of each user to the compatability score of the current user.
 
 ### Giphy of working app
 ![site giphy](/public/images/friend-giphy.gif)
+
+Author: Cesar Gomez
