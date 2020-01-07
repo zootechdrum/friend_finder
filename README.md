@@ -72,3 +72,4 @@ of each user to the compatability score of the current user.
 ![site giphy](/public/images/friend-giphy.gif)
 
 Author: Cesar Gomez
+Delete this
